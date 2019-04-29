@@ -1,0 +1,17 @@
+img{
+	height: 750px;
+}
+
+.fixed-top-2 {
+    margin-top: 50px;
+	background-color: purple;
+}
+
+
+
+.card-img-top{
+    height: 250px;
+}
+.card{
+     margin-top:50px;
+}
