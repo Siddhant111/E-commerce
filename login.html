@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+        <script>
+            var config = {
+                apiKey: "AIzaSyAbUh70Ye54PmubxCI7OYkVIApg_MRnjI8",
+                authDomain: "e-commerce-website-8a671.firebaseapp.com",
+                databaseURL: "https://e-commerce-website-8a671.firebaseio.com",
+                projectId: "e-commerce-website-8a671",
+                storageBucket: "e-commerce-website-8a671.appspot.com",
+                messagingSenderId: "415258908029"
+            };
+            firebase.initializeApp(config);
+            var database = firebase.database();
+        </script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <script type="text/javascript">
+            var uiConfig = {
+                callbacks: {
+                    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+                        var user = authResult.user;
+                        var credential = authResult.credential;
+                        var providerId = authResult.additionalUserInfo.providerId;
+                        var operationType = authResult.operationType;
+                        var database = firebase.database();
+                        firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
+                            username: firebase.auth().currentUser.displayName,
+                            email: firebase.auth().currentUser.email,
+                            profile_picture : firebase.auth().currentUser.photoURL
+                        }, function(error) {
+                            if (error) {
+                                alert("The write failed...");
+                            } else {
+                                alert("Data saved successfully!");
+                            }
+                        });
+                        return true;
+                    },
+                    signInFailure: function(error) {
+                        return handleUIError(error);
+                    },
+                    uiShown: function() {
+                        document.getElementById('loader').style.display = 'none';
+                    }
+                },
+                credentialHelper: firebaseui.auth.CredentialHelper.ACCOUNT_CHOOSER_COM,
+                queryParameterForWidgetMode: 'mode',
+                queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
+                signInFlow: 'popup',
+                signInSuccessUrl: 'index.html',
+                signInOptions: [
+                    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                    {
+                        provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                        requireDisplayName: true
+                    },
+                    {
+                        provider: firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+                        recaptchaParameters: {
+                            type: 'image',
+                            size: 'invisible',
+                            badge: 'bottomleft'
+                        }
+                    },
+                    firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+                ],
+                tosUrl: '<your-tos-url>',
+                privacyPolicyUrl: function() {
+                    window.location.assign('<your-privacy-policy-url>');
+                }
+            };
+            var ui = new firebaseui.auth.AuthUI(firebase.auth());
+            ui.start('#firebaseui-auth-container', uiConfig);
+        </script>
+    </head>
+    <body>
+        <h1>Login To Your Account</h1>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+    </body>
+</html>
