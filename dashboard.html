@@ -1,3 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script src="firebase.js"></script>
+<script type="text/javascript">
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+            // User is not signed in.
+            location.href = "login.html";
+        }
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -19,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" input type="text" value=""  type="search"  id="myinput" onkeyup="searchFunction()" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success  buy my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success  buy my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 <ul class="navbar-nav mr-auto" style="margin-left: 574px;">
                     <li class="nav-item active px-3">
@@ -31,7 +41,7 @@
                     <li class="nav-item active px-3">
                         <a class="nav-link" href="#">My Cart</a>
                     </li>
-                    <button class="btn btn-danger  buy my-2 my-sm-0" type="submit">Logout</button>
+                    <button class="btn btn-outline-danger  buy my-2 my-sm-0" onclick="logout()">Logout</button>
                 </ul>
             </div>
         </nav>
@@ -130,8 +140,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Lokwan</h5>
                     <p class="card-text price"><b>₹24/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -141,8 +151,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sehor Sharbati</h5>
                     <p class="card-text price"><b>₹30/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -152,8 +162,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">2169</h5>
                     <p class="card-text price"><b>₹22/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -163,8 +173,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">India gold</h5>
                     <p class="card-text price"><b>₹21/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -174,8 +184,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Bansi</h5>
                     <p class="card-text price"><b>₹26/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>	
@@ -185,8 +195,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Wheat Mill</h5>
                     <p class="card-text price"><b>₹19/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -196,8 +206,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Basmati</h5>
                     <p class="card-text price"><b>₹30/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -207,8 +217,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Hmt</h5>
                     <p class="card-text price"><b>₹43/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -218,8 +228,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Lackari Kolam</h5>
                     <p class="card-text price"><b>₹54/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -229,8 +239,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Indrayani</h5>
                     <p class="card-text price"><b>₹44/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -240,8 +250,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sona Masoori</h5>
                     <p class="card-text price"><b>₹32/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -251,8 +261,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Boiled rice</h5>
                     <p class="card-text price"><b>₹30/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -262,8 +272,8 @@
                 <div class="card-body">
                     <h5 class="card-title product"> Basmati Steam</h5>
                     <p class="card-text price"><b>₹100/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -273,8 +283,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Basmatii Sella</h5>
                     <p class="card-text price"><b>₹80/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -284,8 +294,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Masoori</h5>
                     <p class="card-text price"><b>₹20/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -295,8 +305,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sunflower Refined</h5>
                     <p class="card-text price"><b>₹1300/tin</b>.</p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -306,8 +316,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Soyabin Refined</h5>
                     <p class="card-text price"><b>₹1360/tin</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -317,8 +327,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Cotton seed refined</h5>
                     <p class="card-text price"><b>₹1280/tin</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -329,8 +339,8 @@
                     <div class="card-body">
                         <h5 class="card-title product">Yellow Corn</h5>
                         <p class="card-text price"><b>₹23/kg</b>.</p>
-                        <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                        <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                        <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                        <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                     </div>
                 </div>
             </div>
@@ -341,8 +351,8 @@
                         <div class="card-body">
                             <h5 class="card-title product">White Corn</h5>
                             <p class="card-text price"><b>₹28/kg</b>.</p>
-                            <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                            <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                            <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                            <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                         </div>
                     </div>
                 </div>
@@ -353,8 +363,8 @@
                             <div class="card-body">
                                 <h5 class="card-title product">Popcorn Corn</h5>
                                 <p class="card-text price"><b>₹40/kg</b>.</p>
-                                <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                                <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                                <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                                <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                             </div>
                         </div>
                     </div>
@@ -364,8 +374,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Green Millets</h5>
                     <p class="card-text price"><b>₹24/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -375,8 +385,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">White Millets</h5>
                     <p class="card-text price"><b>₹34/kg</b>.</p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -386,8 +396,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Chana</h5>
                     <p class="card-text price"><b>₹44/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -397,8 +407,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Kabuli Channa</h5>
                     <p class="card-text price"><b>₹75/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -408,8 +418,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Masoor</h5>
                     <p class="card-text price"><b>₹58/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -419,8 +429,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Toor</h5>
                     <p class="card-text price"><b>₹56/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -430,8 +440,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Matki</h5>
                     <p class="card-text price"><b>₹85/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -441,8 +451,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Chavli</h5>
                     <p class="card-text price"><b>₹65/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -452,8 +462,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Rajma</h5>
                     <p class="card-text price"><b>₹65/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -463,8 +473,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Toor dal</h5>
                     <p class="card-text price"><b>₹90/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -474,8 +484,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Chana</h5>
                     <p class="card-text price"><b>₹65/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -485,8 +495,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Masoor</h5>
                     <p class="card-text price"><b>₹62/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -496,8 +506,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Matki dal</h5>
                     <p class="card-text price"><b>₹90/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -507,8 +517,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Organic Jaggery</h5>
                     <p class="card-text price"><b>₹40/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -518,8 +528,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">normal Jaggery</h5>
                     <p class="card-text price"><b>₹36/kg (10kg packing)</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -529,8 +539,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sugar s-30</h5>
                     <p class="card-text price"><b>₹33/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -540,8 +550,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sugar m-30</h5>
                     <p class="card-text price"><b>₹34/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -551,8 +561,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sugar l-30</h5>
                     <p class="card-text price"><b>₹36/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -562,8 +572,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Cumin</h5>
                     <p class="card-text price"><b>₹280/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -573,8 +583,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Sabudana</h5>
                     <p class="card-text price"><b>₹50/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -584,8 +594,8 @@
                 <div class="card-body">
                     <h5 class="card-title product">Mustard</h5>
                     <p class="card-text price"><b>₹100/kg</b></p>
-                    <a class="btn btn-success  buy my-2 my-sm-0">BUY NOW</a>
-                    <a class="btn btn-danger cart my-2 my-sm-0">ADD TO CART</a>
+                    <a class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>
             </div>
         </div>
@@ -596,6 +606,14 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src="bootstrap/js/scrollreveal.min.js"></script>
         <script type="text/javascript">
+            function logout() {
+                firebase.auth().signOut().then(function() {
+                    console.log('Signed Out');
+                    location.href = "index.html"
+                }, function(error) {
+                    console.error('Sign Out Error', error);
+                });
+            }
             var database = firebase.database();
             var addToCartButtons = document.getElementsByClassName('cart')
             for (var i = 0; i < addToCartButtons.length; i++) {
