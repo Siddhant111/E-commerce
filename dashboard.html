@@ -1,3 +1,13 @@
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script src="firebase.js"></script>
+<script type="text/javascript">
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (!user) {
+            // User is not signed in.
+            location.href = "login.html";
+        }
+    });
+</script>
 <!DOCTYPE html>
 <html lang="en">
     <head>
