@@ -8,6 +8,7 @@
         <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
         <script type="text/javascript">
+            var database = firebase.database();
             var uiConfig = {
                 callbacks: {
                     signInSuccessWithAuthResult: function(authResult, redirectUrl) {
@@ -15,7 +16,6 @@
                         var credential = authResult.credential;
                         var providerId = authResult.additionalUserInfo.providerId;
                         var operationType = authResult.operationType;
-                        var database = firebase.database();
                         firebase.database().ref('users/' + firebase.auth().currentUser.uid).set({
                             username: firebase.auth().currentUser.displayName,
                             email: firebase.auth().currentUser.email,
@@ -40,7 +40,7 @@
                 queryParameterForWidgetMode: 'mode',
                 queryParameterForSignInSuccessUrl: 'signInSuccessUrl',
                 signInFlow: 'popup',
-                signInSuccessUrl: 'index.html',
+                signInSuccessUrl: 'dashboard.html',
                 signInOptions: [
                     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                     {
