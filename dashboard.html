@@ -7,9 +7,11 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="dashboard.css">
+        <script src="script.js"></script>
         <title>My Dashboard</title>
+        
     </head>
-    <body>
+        <body>
         <nav class="navbar navbar-expand-md navbar-inverse bg-dark navbar-dark fixed-top">
             <a class="navbar-brand" href="#">Shah's</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,11 +30,13 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2" input type="text" value=""  type="search"  id="myinput" onkeyup="searchFunction()" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success  buy my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
+
+        <div id="wrapper">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top-2">
             <a class="navbar-brand" href="#wheat">Products</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,6 +81,7 @@
                 </ul>
             </div>
         </nav>
+        </div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#mycauresel" data-slide-to="0" class="active"></li>
@@ -513,7 +518,7 @@
                 <img class="card-img-top" src="img/jaggery.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title product">normal Jaggery</h5>
-                    <p class="card-text price"><b>₹36/10kg</b></p>
+                    <p class="card-text price"><b>₹36/kg (10kg packing)</b></p>
                     <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
                     <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
                 </div>

@@ -92,17 +92,6 @@ footer a{
 button{
     margin-left: 140px;
 }
-#login a{
-    margin-left: 110px;
-    color: blue;
-}
-#login a:hover{
-    color: red;
-}
-#login{
-    margin-top: 180px;
-    padding: 50px;
-}
 @media only screen and (max-width: 568px) {
     .cover h1{
         font-size: 40px;
@@ -113,7 +102,5 @@ button{
     button{
         margin-left: 120px;
     }
-    #login a{
-        margin-left: 90px;
-    }
+   
 }
