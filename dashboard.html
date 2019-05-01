@@ -1,543 +1,547 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="dashboard.css">
-	  
-
-    <title>My Dashboard</title>
-  </head>
-	
-	<body>
-		
-		<nav class="navbar navbar-expand-md navbar-inverse bg-dark navbar-dark fixed-top">
-  <a class="navbar-brand" href="#">Shah's</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active px-3">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-		 <li class="nav-item active px-3">
-        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-      </li>
-		 <li class="nav-item active px-3">
-			 <a class="nav-link" href="#">My Cart</a>
-      </li>
-    </ul>
-   
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success  buy my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-	
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top-2">
-  <a class="navbar-brand" href="#">Rice</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active px-5">
-        <a class="nav-link" href="#">Wheat <span class="sr-only">(current)</span></a>
-      </li>
-		 <li class="nav-item active px-5">
-        <a class="nav-link" href="#">Oil <span class="sr-only">(current)</span></a>
-      </li>
-		 <li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Maize</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Millets</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Jaggery</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Dal</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Sugar</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Cumin</a>
-      </li>
-		
-		<li class="nav-item active px-5">
-			 <a class="nav-link" href="#">Others</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-	
-	
-	 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			  		<li data-target="#mycauresel" data-slide-to="0" class="active"></li>
-			  		<li data-target="#mycauresel" data-slide-to="1"></li>
-			  		<li data-target="#mycauresel" data-slide-to="2"></li>
-			  </ol>
-		  
-			  <!--Wrapper -->
-			  <div class="carousel-inner">
-			  	<div class="carousel-item active bg-primary">
-				  <img class="d-block w-100"  src="img/rice.png" alt="Image1">
-					<div class="carousel-caption d-none d-md-block"  >
-						<h5>Nafees</h5>
-						<p>Presenting You the <b>Longest</b> Variety of Rice!</p>
-				  </div>
-				  	</div>
-				  
-				  <div class="carousel-item bg-danger">
-				  <img class="d-block w-100"  src="img/wheat-dash.jpg" alt="Image2">
-					<div class="carousel-caption d-none d-md-block">
-						<h5>Wheat</h5>
-						<p>Directly From the Fields of Punjab</p>
-				  </div>
-				  	</div>
-				  
-				  <div class="carousel-item bg-success" >
-				  <img class="d-block w-100"  src="img/oil.jpg" alt="Image3">
-					<div class="carousel-caption d-none d-md-block" >
-						<h5>Oil</h5>
-						<p>Purest Refined Oil In The Market</p>
-				  </div>
-				  	</div>
-			  </div><!--Wrapper-->
-		  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-		  </div>
-	
-	
-
-	<!--Card View-->
-	<div class="row">
-    <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/indiagold.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Lokwan</h5>
-    <p class="card-text"><b>₹24/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-    <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/sherbati.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sehor Sharbati</h5>
-    <p class="card-text"><b>₹30/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/2169.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">2169</h5>
-    <p class="card-text"><b>₹22/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div>
-</div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/lokwan.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">India gold</h5>
-    <p class="card-text"><b>₹21/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/bansi.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Bansi</h5>
-    <p class="card-text"><b>₹26/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>	
-        
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/wheatmill.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Wheat Mill</h5>
-    <p class="card-text"><b>₹19/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/basmati.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Basmati</h5>
-    <p class="card-text"><b>₹30/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/hmt.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Hmt</h5>
-    <p class="card-text"><b>₹43/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/Kolam.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Lackari Kolam</h5>
-    <p class="card-text"><b>₹54/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/indrayani.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Indrayani</h5>
-    <p class="card-text"><b>₹44/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/sona.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sona Masoori</h5>
-    <p class="card-text"><b>₹32/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/ukda.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Boiled rice</h5>
-    <p class="card-text"><b>₹30/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-        
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/basmati-steam.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">1121 Basmati Steam</h5>
-    <p class="card-text"><b>₹100/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/sella.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Basmatii Sella</h5>
-    <p class="card-text"><b>₹80/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/masoori.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Masoori</h5>
-    <p class="card-text"><b>₹20/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/sunflower.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sunflower Refined</h5>
-    <p class="card-text"><b>₹1300/tin</b>.</p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/soyabean.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Soyabin Refined</h5>
-    <p class="card-text"><b>₹1360/tin</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/cootonseed.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Cotton seed refined</h5>
-    <p class="card-text"><b>₹1280/tin</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/green.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Green Millets</h5>
-    <p class="card-text"><b>₹24/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/white.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">White Millets</h5>
-    <p class="card-text"><b>₹34/kg</b>.</p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/chana.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Chana</h5>
-    <p class="card-text"><b>₹44/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/Kabuli-Chana.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Kabuli Channa</h5>
-    <p class="card-text"><b>₹75/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/masoor-pulse.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Masoor</h5>
-    <p class="card-text"><b>₹58/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/toor-pulse.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Toor</h5>
-    <p class="card-text"><b>₹56/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/matki-pulse.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Matki</h5>
-    <p class="card-text"><b>₹85/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/chavli.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Chavli</h5>
-    <p class="card-text"><b>₹65/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/rajma.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Rajma</h5>
-    <p class="card-text"><b>₹65/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/toor-dal.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Toor dal</h5>
-    <p class="card-text"><b>₹90/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/chana-dal.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Chana</h5>
-    <p class="card-text"><b>₹65/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-         <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/masoor-dal.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Masoor</h5>
-    <p class="card-text"><b>₹62/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
- <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/matki-dal.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Matki dal</h5>
-    <p class="card-text"><b>₹90/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-         <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/jaggery-organic.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Organic Jaggery</h5>
-    <p class="card-text"><b>₹40/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-         <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/jaggery.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">normal Jaggery</h5>
-    <p class="card-text"><b>₹36/10kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-		
-                 <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/s30.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sugar s-30</h5>
-    <p class="card-text"><b>₹33/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/m30.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sugar m-30</h5>
-    <p class="card-text"><b>₹34/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-        
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/l30.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sugar l-30</h5>
-    <p class="card-text"><b>₹36/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
- 
-        <div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/cumin.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Cumin</h5>
-    <p class="card-text"><b>₹280/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-
-<div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/Sabudana.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Sabudana</h5>
-    <p class="card-text"><b>₹50/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-
-
-<div class="col-sm-4"><div class="card" >
-  <img class="card-img-top" src="img/moheri.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Mustard</h5>
-    <p class="card-text"><b>₹100/kg</b></p>
-    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
-      <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
-  </div>
-</div></div>
-
-
-        
-		
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	  
-	  <script src="bootstrap/js/scrollreveal.min.js"></script>
-	</body>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dashboard.css">
+        <title>My Dashboard</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-inverse bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Shah's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="#">My Cart</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success  buy my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top-2">
+            <a class="navbar-brand" href="#">Rice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Wheat <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Oil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Maize</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Millets</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Jaggery</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Dal</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Sugar</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Cumin</a>
+                    </li>
+                    <li class="nav-item active px-5">
+                        <a class="nav-link" href="#">Others</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mycauresel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycauresel" data-slide-to="1"></li>
+                <li data-target="#mycauresel" data-slide-to="2"></li>
+            </ol>
+            <!--Wrapper -->
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-primary">
+                    <img class="d-block w-100"  src="img/rice.png" alt="Image1">
+                    <div class="carousel-caption d-none d-md-block"  >
+                        <h5>Nafees</h5>
+                        <p>Presenting You the <b>Longest</b> Variety of Rice!</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-danger">
+                    <img class="d-block w-100"  src="img/wheat-dash.jpg" alt="Image2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Wheat</h5>
+                        <p>Directly From the Fields of Punjab</p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-success" >
+                    <img class="d-block w-100"  src="img/oil.jpg" alt="Image3">
+                    <div class="carousel-caption d-none d-md-block" >
+                        <h5>Oil</h5>
+                        <p>Purest Refined Oil In The Market</p>
+                    </div>
+                </div>
+            </div><!--Wrapper-->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--Card View-->
+        <div class="row">
+            <div class="col-sm-4"><div class="card">
+                <img class="card-img-top" src="img/indiagold.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lokwan</h5>
+                    <p class="card-text"><b>₹24/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/sherbati.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sehor Sharbati</h5>
+                    <p class="card-text"><b>₹30/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/2169.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">2169</h5>
+                    <p class="card-text"><b>₹22/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/lokwan.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">India gold</h5>
+                    <p class="card-text"><b>₹21/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/bansi.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bansi</h5>
+                    <p class="card-text"><b>₹26/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>	
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/wheatmill.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Wheat Mill</h5>
+                    <p class="card-text"><b>₹19/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/basmati.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Basmati</h5>
+                    <p class="card-text"><b>₹30/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/hmt.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Hmt</h5>
+                    <p class="card-text"><b>₹43/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/Kolam.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lackari Kolam</h5>
+                    <p class="card-text"><b>₹54/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/indrayani.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Indrayani</h5>
+                    <p class="card-text"><b>₹44/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/sona.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sona Masoori</h5>
+                    <p class="card-text"><b>₹32/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/ukda.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Boiled rice</h5>
+                    <p class="card-text"><b>₹30/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/basmati-steam.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">1121 Basmati Steam</h5>
+                    <p class="card-text"><b>₹100/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/sella.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Basmatii Sella</h5>
+                    <p class="card-text"><b>₹80/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/masoori.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Masoori</h5>
+                    <p class="card-text"><b>₹20/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/sunflower.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sunflower Refined</h5>
+                    <p class="card-text"><b>₹1300/tin</b>.</p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/soyabean.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Soyabin Refined</h5>
+                    <p class="card-text"><b>₹1360/tin</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/cootonseed.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cotton seed refined</h5>
+                    <p class="card-text"><b>₹1280/tin</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/green.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Green Millets</h5>
+                    <p class="card-text"><b>₹24/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/white.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">White Millets</h5>
+                    <p class="card-text"><b>₹34/kg</b>.</p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/chana.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chana</h5>
+                    <p class="card-text"><b>₹44/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/Kabuli-Chana.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Kabuli Channa</h5>
+                    <p class="card-text"><b>₹75/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/masoor-pulse.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Masoor</h5>
+                    <p class="card-text"><b>₹58/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/toor-pulse.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Toor</h5>
+                    <p class="card-text"><b>₹56/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/matki-pulse.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Matki</h5>
+                    <p class="card-text"><b>₹85/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/chavli.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chavli</h5>
+                    <p class="card-text"><b>₹65/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/rajma.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Rajma</h5>
+                    <p class="card-text"><b>₹65/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/toor-dal.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Toor dal</h5>
+                    <p class="card-text"><b>₹90/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/chana-dal.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Chana</h5>
+                    <p class="card-text"><b>₹65/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/masoor-dal.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Masoor</h5>
+                    <p class="card-text"><b>₹62/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/matki-dal.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Matki dal</h5>
+                    <p class="card-text"><b>₹90/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/jaggery-organic.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Organic Jaggery</h5>
+                    <p class="card-text"><b>₹40/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/jaggery.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">normal Jaggery</h5>
+                    <p class="card-text"><b>₹36/10kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/s30.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sugar s-30</h5>
+                    <p class="card-text"><b>₹33/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/m30.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sugar m-30</h5>
+                    <p class="card-text"><b>₹34/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/l30.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sugar l-30</h5>
+                    <p class="card-text"><b>₹36/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/cumin.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cumin</h5>
+                    <p class="card-text"><b>₹280/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/Sabudana.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sabudana</h5>
+                    <p class="card-text"><b>₹50/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="img/moheri.jpeg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Mustard</h5>
+                    <p class="card-text"><b>₹100/kg</b></p>
+                    <a href="#" class="btn btn-outline-success  buy my-2 my-sm-0">BUY NOW</a>
+                    <a href="#" class="btn btn-outline-danger cart my-2 my-sm-0">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="bootstrap/js/scrollreveal.min.js"></script>
+    </body>
+</html>
