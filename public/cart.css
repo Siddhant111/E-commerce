@@ -1,10 +1,19 @@
 .purchase{
-    margin-left: 475px;
+    margin-top: 20050px;
+    margin-left: 565px;
     font-size: 35px;
+    color: #33691e;
 }
 .shop-more{
-    margin-left: 25px;
+    margin-left: 565px;
     font-size: 35px;
+    color: #f57f17;
+}
+.empty-cart{
+    margin-top: 150px;
+    font-weight: bolder;
+    color: #b71c1c;
+    font-size: 40px;
 }
 hr { 
   display: block;
@@ -22,10 +31,6 @@ hr {
     text-align: center;
     font-size: 2.5em;
 }
-.background {
-	url : back.jpg;
-}
-
 .cart-item {
     width: 35%;
     margin-left: 30px;
@@ -99,4 +104,12 @@ hr {
     color: #333;
     font-size: 1.1em;
     font-family: "Courier";
+}
+#background{
+    background: url(img/back.jpg) no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    color:black;
+    height:90.8%;
+    font-size: 25px;
 }
