@@ -119,5 +119,16 @@ button{
     button{
         margin-left: 120px;
     }
+
+    #team1{
+        font-size: 15px;
+    }
+
+    #About{
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+
+    
    
 }
