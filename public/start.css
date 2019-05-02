@@ -78,10 +78,9 @@ h2{
 #team1{
     background: url('img/blur4.jpg') top left no-repeat;
     background-size: cover;
-    color:black;
-    
-    text-align: center;
+    color:white;
     height:90.8%;
+    font-size: 25px;
 }
 #team2{
     background: url('img/BLUR3.jpg') top left no-repeat;
